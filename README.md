@@ -1,10 +1,7 @@
 # Iman Setiawan
 # TI.21.A1
 
-**Tugas Praktikum - Pertemuan 11**
-
-Berikut soal tugas dari modul Lab 6.\
-![screenshot output](screenshot/soal.png)
+**Tugas Praktikum Lab 8 - Pertemuan 12**
 
 Ini adalah flowchart dari code saya.\
 ![screenshot output](screenshot/flowchart.jpg)
@@ -15,8 +12,20 @@ Berikut adalah code saya
 datasiswa = []
 pilih = 0
 
+class Person():
+    def __init__(self, nama, nim, nilai):
+        self.nama = nama
+        self.nim = nim
+        self.nilai = nilai
+
+    def cetak(self):
+        print(f"Nama Siswa\t: ", self.nama)
+        print(f"NIM Siswa\t: ", self.nim)
+        print(f"Nilai Siswa\t: ", self.nilai)
+        print("~~~")
+
 def menu():
-    print("Daftar mahasiswa")
+    print("Daftar Nilai Mahasiswa")
     print("1. Tambah Data")
     print("2. Tampilkan Data")
     print("3. Hapus Data")
@@ -56,25 +65,30 @@ def tambah():
     input("Enter untuk ke Menu Utama. . .")
     print()
     menu()
-    
+
 def tampilkan():
     if len(datasiswa) == 0:
         print("Tidak Ada Data !")
         print("Tambah data dahulu sebelum membuka menu ini !")
     else:
-        print("Daftar Mahasiswa")
+        print("Daftar Nilai Mahasiswa")
         print("Total Mahasiswa : ",len(datasiswa))
         print("-"*20)
+
+
+        
         for item in datasiswa:
-            print(f"Nama Siswa\t: ", item["nama"])
-            print(f"NIM Siswa\t: ", item["nim"])
-            print(f"Nilai Siswa\t: ", item["nilai"])
-            print("-"*20)
+            test1 = item["nama"]
+            test2 = item["nim"]
+            test3 = item["nilai"]
+            cetakdenganclass = Person(test1, test2, test3)
+            cetakdenganclass.cetak()
+            
     print()
     input("Enter untuk ke Menu Utama. . .")
     print()
     menu()
-
+            
 def hapus():
     if len(datasiswa) == 0:
         print("Tidak Ada Data !")
@@ -124,9 +138,25 @@ def keluar():
     else:
         menu()
         print()
-
 menu()
 
+~~~
+
+Kode saya menggunakan kode dari tugas pertemuan 11 tapi berbeda sedikit.\
+Dengan tambahan class dari materi baru pertemuan 12.\
+Berikut kode tambahannya.
+~~~
+class Person():
+    def __init__(self, nama, nim, nilai):
+        self.nama = nama
+        self.nim = nim
+        self.nilai = nilai
+
+    def cetak(self):
+        print(f"Nama Siswa\t: ", self.nama)
+        print(f"NIM Siswa\t: ", self.nim)
+        print(f"Nilai Siswa\t: ", self.nilai)
+        print("~~~")
 ~~~
 
 Tampilan dari fungsi menu().\
