@@ -1,17 +1,3 @@
-# Iman Setiawan
-# TI.21.A1
-
-**Tugas Praktikum - Pertemuan 11**
-
-Berikut soal tugas dari modul Lab 6.\
-![screenshot output](screenshot/soal.png)
-
-Ini adalah flowchart dari code saya.\
-![screenshot output](screenshot/flowchart.jpg)
-
-Berikut adalah code saya
-~~~
-
 datasiswa = []
 pilih = 0
 
@@ -126,27 +112,3 @@ def keluar():
         print()
 
 menu()
-
-~~~
-
-Tampilan dari fungsi menu().\
-![screenshot output](screenshot/ss1.png)
-
-Tampilan dari fungsi tambah().\
-![screenshot output](screenshot/ss2.png)
-![screenshot output](screenshot/ss3.png)
-
-Tampilan dari fungsi tampilkan().\
-![screenshot output](screenshot/ss4.png)
-
-Tampilan dari fungsi hapus().\
-![screenshot output](screenshot/ss5.png)
-
-Tampilan dari fungsi ubah().\
-![screenshot output](screenshot/ss6.png)
-![screenshot output](screenshot/ss7.png)
-
-
-
-
-
